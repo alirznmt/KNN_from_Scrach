@@ -1,15 +1,10 @@
-# k-NN Implementation for CDC Diabetes Health Indicators
+# k-NN Implementation for Employee Data Classification
 
 ## Overview
-This project implements a k-nearest neighbors (k-NN) classifier to predict diabetes status using the CDC Diabetes Health Indicators dataset. The project includes cross-validation to select the optimal value of k, comparisons between imbalanced and balanced datasets, and optimizations to improve computational efficiency.
+This project implements a k-nearest neighbors (k-NN) classifier to predict employee attrition using the Employee Data Classification dataset. The project includes cross-validation to select the optimal value of k and optimizations to improve computational efficiency.
 
 ## Dataset
-The dataset used is `diabetes_012_health_indicators_BRFSS2015.csv`, which contains 253,680 survey responses to the CDC's BRFSS2015. The target variable, `Diabetes_012`, has three classes:
-- `0`: No diabetes or only during pregnancy
-- `1`: Prediabetes
-- `2`: Diabetes
-
-This dataset includes 21 feature variables.
+The Employee Data Classification dataset has been used. The dataset is available here.. The dataset comprises 7 features and a label feature named "LeaveOrNot".
 
 ## Project Steps
 1. **Data Loading**: Load the dataset into Python.
@@ -24,11 +19,6 @@ This dataset includes 21 feature variables.
    - Compute the test error for each k.
    - Choose the optimal k based on the test errors.
    - Compute the error rate of the classifier for the optimal k on the validation set.
-6. **Balanced vs. Imbalanced Data**:
-   - Compare results using balanced data to the imbalanced data based on the chosen k.
-   - Optionally, create a balanced dataset using techniques for dealing with imbalanced data.
-   - Determine if there is a significant difference between the results for imbalanced and balanced data.
-   - Identify the optimal k using balanced data.
 
 ### Computational Cost Optimization
 1. **Priority Queue Heap Data Structure**:
@@ -55,9 +45,4 @@ This dataset includes 21 feature variables.
 3. Run the Jupyter notebook or Python scripts provided.
 
 ## Results
-- The optimal value of k and its justification.
-- Comparison of error rates between imbalanced and balanced datasets.
-- Running time comparisons between different data structures (heap, k-d tree) and dimension reduction techniques.
-
-## Conclusion
-This project demonstrates the implementation and optimization of a k-NN classifier on a real-world dataset, providing insights into the impact of data balancing and computational efficiency improvements.
+- The optimal
